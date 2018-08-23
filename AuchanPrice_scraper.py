@@ -6,9 +6,9 @@ import scrapy, requests as Request
 # https://www.auchandrive.fr/drive/mag/Englos-924
 # https://www.auchandrive.fr/catalog/coca-cola-zero-1l-P762493
 
-class BrickSetSpider(scrapy.Spider):
+class ProductPriceSpider(scrapy.Spider):
 
-    name = 'brickset'
+    name = 'productprice'
     start_urls = ['https://www.auchandrive.fr/drive/mag/Englos-924']
     my_urls = ['https://www.auchandrive.fr/catalog/coca-cola-zero-1l-P762493']
 
@@ -27,17 +27,17 @@ class BrickSetSpider(scrapy.Spider):
 
     def parse(self, response):
         SET_SELECTOR = '.pdp-buy'
-        for brickset in response.css(SET_SELECTOR):
+        for productprice in response.css(SET_SELECTOR):
             PRICE_UNIT_SELECTOR = 'div .price--per ::text'
             #PRICE_TOTAL_SELECTOR = '//p[@class="price-standard"]/span/text()' # xpath
             PRICE_TOTAL_SELECTOR = 'div .pdp-price span ::text' # css
             yield {
                 'Price Unit': string_to_price(
-                    brickset.css(PRICE_UNIT_SELECTOR).extract_first()
+                    productprice.css(PRICE_UNIT_SELECTOR).extract_first()
                     ),
                 'Price Total': string_to_price(
                     list_to_string(
-                        brickset.css(PRICE_TOTAL_SELECTOR).extract()
+                        productprice.css(PRICE_TOTAL_SELECTOR).extract()
                         )
                     ),
             }
