@@ -3,8 +3,17 @@ Simple example of scraping a product price from Auchan Drive.
 
 **Summary**
 1. [Context and dependencies](#context-and-dependencies)
+1. [Running the scrap](#running-the-scrap)
+1. [Workflow](#workflow)
 1. [Classes](#classes)
+   1. [Attributes](#attributes)
+   1. [Methods](#methods)
 1. [Functions](#functions)
+   1. [List to String](#list-to-string-function)
+   1. [String to Price](#string-to-price-function)
+1. [Detailed sections](#)
+   1. [Cookie persistence](#cookie-persistence)
+   1. [Parse selector focus](#parse-selector-focus)
 
 
 ## Context and dependencies
