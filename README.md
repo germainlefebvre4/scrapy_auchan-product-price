@@ -1,10 +1,14 @@
-# Scraper Auchan Product Price
-Simple example of scraping a product price from Auchan Drive.
+# How to scrap products from Auchan Drive websites
+
+You can find mindset and examples for scraping a product pricse from Auchan Drive websites.
+
+It is tidied by project shots that have single of multiple purposes.
 
 **Summary**
 1. [Context and dependencies](#context-and-dependencies)
 1. [Running the scrap](#running-the-scrap)
 1. [Workflow](#workflow)
+1. [Goal of directories and projects](#goal-of-directories-and-projects)
 
 
 
