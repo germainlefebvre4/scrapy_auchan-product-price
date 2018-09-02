@@ -47,3 +47,5 @@ Thus we can show product informations. We chose product [Coca-Cola Zero 1L](#htt
 Sens and goal of directories:
 * SingleProductParser: Quick simple example to focus on Scrapy Framework,
 * MultipleProductsParser: Script to parse prices from multiple sources of products (product page and search page),
+* ProductsSaveMongo: Evolved version with better structured data and saving into a MongoDB,
+
