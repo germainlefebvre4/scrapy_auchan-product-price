@@ -1,0 +1,6 @@
+mongo:
+    address: "ds141872.mlab.com"
+    port: 41872
+    database: "auchan-products"
+    username: "scrapy59"
+    password: "scrapy59"
